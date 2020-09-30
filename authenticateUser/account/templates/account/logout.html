@@ -40,13 +40,12 @@
                                     <div class="main-menu d-none d-lg-block">
                                         <nav>
                                             <ul id="navigation">  
-                                                {% if user.is_authenticated %}   
-                                                    <li class="fa fa-list-alt" ><h2> DJ~Auth </h2></li>                                                                                     
-                                                    <li class="active" ><a href="{% url 'home' %}">Home</a></li>                                                
+                                                {% if user.is_authenticated %}                                                                                        
+                                                    <li class="active fa fa-list-alt" ><a href="{% url 'home' %}">Home</a></li>                                                
                                                     <!-- Button -->                                                
                                                     <li class="button-header"><a href="{% url 'logout' %}" class="btn btn3">Logout</a></li>
                                                 {% else %}
-                                                    <li class="active" ><h2> DJ~Auth </h2></li>
+                                                    <li class="active fa fa-list-alt" ><h2 class="text-body"> DJ~Auth </h2></li>
                                                     <li class="button-header margin-left "><a href="{% url 'register' %}" class="btn"> Register</a></li>
                                                     <li class="button-header"><a href="{% url 'login' %}" class="btn btn3">Login</a></li>
                                                 {% endif %}
@@ -76,11 +75,8 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-xl-6 col-lg-7 col-md-12">
-                                <div class="hero__caption">
-                                    <h1 data-animation="fadeInLeft" data-delay="0.2s">User authentication with Django</h1>
-                                    <p data-animation="fadeInLeft" data-delay="0.4s">A basic user authentication system with a mesmerizing frontend using django</p>
-                                    <a href="https://github.com/Al-ImranRony" class="btn hero-btn" data-animation="fadeInLeft"
-                                        data-delay="0.7s">Visit my works</a>
+                                <div class="hero__caption">                                    
+                                    <p data-animation="fadeInLeft" data-delay="0.4s"><b> You have been logged out. </b></p>                                    
                                 </div>
                             </div>
                         </div>
